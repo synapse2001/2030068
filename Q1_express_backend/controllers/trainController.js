@@ -25,7 +25,7 @@ const fetchAccessCode = async () => {
   }
 };
 
-// Fetch the access code on application startup
+// Fetching the access code on application startup
 fetchAccessCode().catch((err) => {
   console.error("Error while fetching access code on startup:", err.message);
 });
@@ -83,7 +83,6 @@ const fetchTrainsData = async () => {
     return trainsData;
   } catch (err) {
     console.error("Error fetching data from the API:", err.message);
-    // Handle errors accordingly
     throw new Error("Error fetching data from the API");
   }
 };
