@@ -56,7 +56,6 @@ class TrainTable extends Component {
           }
         }
       }
-      // Call the custom sorting function for each requirement
       bubbleSort(data, 'price.AC', 'asc'); // Sort by price in ascending order
       bubbleSort(data, 'seatsAvailable.AC', 'desc'); // Sort by seatsAvailable in descending order
       bubbleSort(data, 'departureTime', 'desc'); // Sort by departureTime in descending order
